@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Example</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 42rem;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.4;
+        }
+
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+
+    <script defer src="../dist/cdn.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <h1>Simple Example</h1>
+
+    <div x-data x-cloak>
+        <p><strong>A message for you:</strong></p>
+        <p x-say-hi></p>
+    </div>
+</body>
+
+</html>
